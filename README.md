@@ -1,6 +1,12 @@
 # INSTRUCTIONS
-### Clone the repository: git clone https://github.com/nicolasfracchia/maxmind-homework-exercise
-### Install dependencies with Composer: composer install
+### Clone the repository
+```
+git clone https://github.com/nicolasfracchia/maxmind-homework-exercise
+```
+### Install dependencies with Composer
+```
+composer install
+```
 
 # DOCUMENTATION
 ## USAGE
@@ -13,14 +19,13 @@
 
 ## DATABASE
 - This project is using GeoLite2-City_20230502 version of the MaxMind database.
-- This database was downloaded from It was downloaded from https://www.maxmind.com/en/accounts/857732/geoip/downloads (GeoLite2 City ---> Download GZIP).
+- This database was downloaded from https://www.maxmind.com/en/accounts/857732/geoip/downloads (GeoLite2 City ---> Download GZIP).
 
 ## READER
 - The **Reader.php** file was generated following the instructions provided at https://github.com/maxmind/MaxMind-DB-Reader-php
 - The example has the necesary modifications for JavaScript calls.
 
 ## SCRIPTS
-#### SEARCH
 ##### scripts/search.js
 - Form listeners.
 - Functions to add/remove fields from the form.
