@@ -10,9 +10,9 @@ composer install
 
 # DOCUMENTATION
 ## USAGE
-- The main page consists on a form with only one field to search for an IP and the option to add more fields dynamically (blue (+) button at the top-right corner).
-- The new fields can be removed with the red button (X) right next to the field.
-- The search will only be executed if there is at least one completed field in the form.
+- The main page consists of a form with one field for searching for an IP address. You can add additional fields dynamically using the blue (+) button in the top-right corner.
+- The new fields can be removed using the red button (X) next to the field.
+- The search will only be executed if there is at least one field in the form that has been filled out completely.
 - The form has some client-side validations to prevent unnecessary requests to the server and the errors will be shown in the right column (results column).
 - The blue "SEARCH" button executes the search.
 - The white "RESET" button eliminates all the added fields on the form and empties the main one to start clean search.
@@ -27,9 +27,10 @@ composer install
 
 ## SCRIPTS
 ##### scripts/search.js
-- Form listeners.
-- Functions to add/remove fields from the form.
-- Requests to **Reader.php** to handle the IP information and error messages.
-- Imports the functions from **scripts/componentsHTML.js** and calls to generate the proper HTML.
+- This script contains event listeners for the search form, as well as functions to add and remove fields from the form.
+- It also sends requests to **Reader.php** to handle the IP information and error messages.
+- Finally, it imports functions from **scripts/componentsHTML.js** to generate the proper HTML.
+
 ##### scripts/componentsHTML.js
-- Only has the functions to show the HTML results and the form fields.
+- This script contains functions to display the search results and the form fields.
+- It is imported by **search.js** to generate the appropriate HTML for the search results.
