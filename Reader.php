@@ -6,7 +6,7 @@
 	$content = trim(file_get_contents("php://input"));
 	$decoded = json_decode($content, true);
 	
-	$databaseFile = 'DB/GeoLite2-City_20230502/GeoLite2-City.mmdb';
+	$databaseFile = 'MMDB_LOCATION_HERE';
 
 	$reader = new Reader($databaseFile);
 
