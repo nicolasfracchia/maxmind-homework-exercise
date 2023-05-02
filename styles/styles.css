@@ -1,0 +1,149 @@
+/** GENERAL STYLES **/
+:root{
+    --blue: #343ccf;
+    --blueOp: #343ccf36;
+    --red: #f56363;
+    --green: #07c607;
+    --grey: #625a5a;
+}
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width:80vw;
+    margin:5vh 10vw;
+}
+main h1,
+main h2{
+    width:100%;
+    padding:0;
+    margin:0 0 5vh 0;
+    text-align: center;
+}
+main section{
+    display: flex;
+    width:37vw;
+    padding:5vh 1vw;
+}
+
+/** FORM **/
+main section form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: fit-content;
+    box-shadow: 0 0 10px 0 var(--blue);
+    border-radius: 10px;
+    padding: 10px;
+}
+main section form div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding:1vh 0;
+    border-radius:10px;
+    padding:10px;
+    transition:.3s;
+}
+main section form div:hover{
+    background-color: var(--blueOp);
+}
+main section form div:hover{
+    background-color: var(--blueOp);
+}
+main section form div label{
+    width:30%;
+    font-weight: bold;
+}
+main section form div input[type=text]{
+    width:70%;
+    border-radius: 10px;
+    padding:5px 10px;
+    border:solid 1px #CCC;
+}
+main section form button[type=button]{
+    width: fit-content;
+    background-color: transparent;
+    cursor:pointer;
+    border:none;
+    padding:0;
+    margin:0;
+    transition: .3s;
+}
+main section form div#buttonsContainer{
+    display: flex;
+    justify-content: space-between;
+}
+main section form div#buttonsContainer:hover{
+    background-color: transparent;
+}
+main section form div#buttonsContainer button{
+    width:45%;
+    font-weight: bold;
+    cursor:pointer;
+    border-radius:10px;
+    padding:1vh 1vw;
+    margin:2vh 0;
+    transition: .3s;
+}
+main section form div#buttonsContainer button[type=submit]{
+    color:#FFFFFF;
+    background-color: var(--blue);
+    border:none;
+}
+main section form div#buttonsContainer button[type=submit]:hover{
+    box-shadow: 0 0 10px 0 var(--blue);
+}
+main section form div#buttonsContainer button[type=button]{
+    color:var(--grey);
+    background-color: #FFFFFF;
+    border:solid 1px #CCC;
+}
+main section form div#buttonsContainer button[type=button]:hover{
+    box-shadow: 0 0 10px 0 var(--grey);
+}
+
+/** RESULTS **/
+main section#response{
+    flex-direction: column;
+}
+main section article{
+    display: flex;
+    flex-direction: column;
+    border-radius:10px;
+    padding:10px;
+    margin-bottom:2vh;
+    transition:.3s;
+}
+main section article.error{
+    box-shadow: 0 0 7px 0 var(--red);
+}
+main section article.success{
+    box-shadow: 0 0 7px 0 var(--green);
+}
+main section article h3{
+    width:100%;
+    text-align: center;
+}
+main section article div{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+main section article div label{
+    font-weight: bold;
+    width:50%;
+    padding:10px;
+    border-bottom:solid 1px #000;
+}
+main section article div span{
+    padding:10px;
+    width:50%;
+}
